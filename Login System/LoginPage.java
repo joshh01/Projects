@@ -26,7 +26,7 @@ public class LoginPage implements ActionListener
 		userIDLabel.setBounds(50, 100, 75, 25);
 		userPasswordLabel.setBounds(50, 150, 75, 25);
 		
-		messageLabel.setBounds(125, 250, 250, 35);
+		messageLabel.setBounds(90, 275, 250, 35);
 		messageLabel.setFont(new Font("Arial", Font.PLAIN, 25));
 		
 		userIDField.setBounds(125, 100, 200, 25);
@@ -51,6 +51,10 @@ public class LoginPage implements ActionListener
 		frame.setSize(420, 420);
 		frame.setLayout(null);
 		frame.setVisible(true);
+	}
+	public void addLabel(JLabel label)
+	{
+		frame.add(label);
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) 
